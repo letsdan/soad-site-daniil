@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System of a Down</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #000;
+            padding: 20px;
+        }
+        h1 {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { text-shadow: 0 0 10px #ff0000; }
+            50% { text-shadow: 0 0 30px #ff0000; }
+            100% { text-shadow: 0 0 10px #ff0000; }
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #ff0000;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        .gallery img {
+            width: 45%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>System of a Down</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="members.html">Участники</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>О группе</h2>
+        <p>System of a Down (SOAD) — американская метал-группа армянского происхождения, образованная в 1994 году в Лос-Анджелесе. Известна политически заряженными текстами, уникальным звучанием (смесь ню-метала, альтернативы и армянских мотивов) и хитами вроде "Chop Suey!", "Toxicity" и "B.Y.O.B.".</p>
+        <p>Группа выпустила 5 студийных альбомов, продала более 40 миллионов записей и выиграла Grammy в 2006 году.</p>
+        
+        <img src="https://www.rollingstone.com/wp-content/uploads/2018/06/system-of-a-down-66260748-b2c4-458f-a349-f83f947a6f67.jpg?w=910&h=511&crop=1" alt="Групповое фото SOAD">
+        <p>Групповое фото группы</p>
+        
+        <img src="https://i.ytimg.com/vi/nVohJKUiK6o/sddefault.jpg" alt="Обложка альбома Toxicity">
+        <p>Обложка легендарного альбома Toxicity (2001)</p>
+        
+        <div class="gallery">
+            <img src="https://music.mxdwn.com/wp-content/uploads/2013/05/System-of-a-Down-1280x720.jpg" alt="SOAD в студии">
+            <img src="https://miro.medium.com/1*JCzeTHoeG9SVkKaS_txW_Q.jpeg" alt="Ещё одно фото группы">
+        </div>
+    </div>
+</body>
+</html>
